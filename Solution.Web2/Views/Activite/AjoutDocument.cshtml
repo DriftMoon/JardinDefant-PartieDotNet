@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "AjoutDocument";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2>AjoutDocument</h2>
+@using (Html.BeginForm("AjoutDocument", "Activite", FormMethod.Post, new {  enctype = "multipart/form-data" }))
+{
+    <div class="form-group">
+        <div class="form-input-styled">
+            @Html.TextBox("Doc", null, new
+       {
+           type = "file",
+           @class = "form-input-styled"
+       })
+            <span class="form-text text-muted">Accepted formats: PDF</span>
+        </div>
+    </div>
+    <input type="submit" value="Save" class="btn btn-default" />
+
+}

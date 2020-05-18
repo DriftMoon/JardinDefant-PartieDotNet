@@ -1,0 +1,111 @@
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.csprojAssemblyReference.cache
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.dll.config
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.pdb
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.pdb
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.dll.config
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.xml
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.csproj.CopyComplete
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.pdb
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.dll.config
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.pdb
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.pdb
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.dll.config
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.xml
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.csprojAssemblyReference.cache
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.csproj.CopyComplete
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.pdb
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.csprojAssemblyReference.cache
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.pdb
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.dll.config
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Data.pdb
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.pdb
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Solution.Domain.dll.config
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.xml
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.csproj.CopyComplete
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.Migrations.mig001.resources
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Data\obj\Debug\Solution.Data.csproj.GenerateResource.cache
+D:\kindergarten\Solution.Data\bin\Debug\Solution.Data.dll.config
+D:\kindergarten\Solution.Data\bin\Debug\Solution.Data.dll
+D:\kindergarten\Solution.Data\bin\Debug\Solution.Data.pdb
+D:\kindergarten\Solution.Data\bin\Debug\EntityFramework.dll
+D:\kindergarten\Solution.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\kindergarten\Solution.Data\bin\Debug\Solution.Domain.dll
+D:\kindergarten\Solution.Data\bin\Debug\Solution.Domain.pdb
+D:\kindergarten\Solution.Data\bin\Debug\Solution.Domain.dll.config
+D:\kindergarten\Solution.Data\bin\Debug\EntityFramework.xml
+D:\kindergarten\Solution.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csprojAssemblyReference.cache
+D:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.CopyComplete
+D:\kindergarten\Solution.Data\obj\Debug\Solution.Data.dll
+D:\kindergarten\Solution.Data\obj\Debug\Solution.Data.pdb
+D:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations.mig001.resources
+D:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.GenerateResource.cache
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Solution.Data.dll.config
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Solution.Data.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Solution.Data.pdb
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\EntityFramework.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Solution.Domain.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Solution.Domain.pdb
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Solution.Domain.dll.config
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\EntityFramework.xml
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\obj\Debug\Solution.Data.csprojAssemblyReference.cache
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.CopyComplete
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\obj\Debug\Solution.Data.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\obj\Debug\Solution.Data.pdb
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations.mig001.resources
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.GenerateResource.cache
+G:\kindergarten\Solution.Data\bin\Debug\Solution.Data.dll.config
+G:\kindergarten\Solution.Data\bin\Debug\Solution.Data.dll
+G:\kindergarten\Solution.Data\bin\Debug\Solution.Data.pdb
+G:\kindergarten\Solution.Data\bin\Debug\EntityFramework.dll
+G:\kindergarten\Solution.Data\bin\Debug\EntityFramework.SqlServer.dll
+G:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+G:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\kindergarten\Solution.Data\bin\Debug\Solution.Domain.dll
+G:\kindergarten\Solution.Data\bin\Debug\Solution.Domain.pdb
+G:\kindergarten\Solution.Data\bin\Debug\Solution.Domain.dll.config
+G:\kindergarten\Solution.Data\bin\Debug\EntityFramework.xml
+G:\kindergarten\Solution.Data\bin\Debug\EntityFramework.SqlServer.xml
+G:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+G:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\kindergarten\Solution.Data\bin\Debug\fr\Microsoft.AspNet.Identity.Core.resources.dll
+G:\kindergarten\Solution.Data\bin\Debug\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csprojAssemblyReference.cache
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations._1104.resources
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.GenerateResource.cache
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.CopyComplete
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.dll
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.pdb
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations.mig1305.resources

@@ -1,0 +1,82 @@
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.dll.config
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.pdb
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.xml
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.csproj.CopyComplete
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.dll
+C:\Users\asus\source\repos\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.pdb
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.dll.config
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.pdb
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.csprojAssemblyReference.cache
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.csproj.CopyComplete
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.dll
+C:\Users\Hudson\Desktop\PIDevPaaS\Solution-4Arctic-2020 pi\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.pdb
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.dll.config
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Solution.Domain.pdb
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.csproj.CopyComplete
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.dll
+C:\Users\Stella\Desktop\iheb sidhom\Solution-4Arctic-2020\Solution.Domain\obj\Debug\Solution.Domain.pdb
+D:\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.dll.config
+D:\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.dll
+D:\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.pdb
+D:\kindergarten\Solution.Domain\bin\Debug\EntityFramework.dll
+D:\kindergarten\Solution.Domain\bin\Debug\EntityFramework.SqlServer.dll
+D:\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\kindergarten\Solution.Domain\bin\Debug\EntityFramework.xml
+D:\kindergarten\Solution.Domain\bin\Debug\EntityFramework.SqlServer.xml
+D:\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.csprojAssemblyReference.cache
+D:\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.csproj.CopyComplete
+D:\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.dll
+D:\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.pdb
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.dll.config
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.pdb
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\EntityFramework.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\EntityFramework.xml
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.csprojAssemblyReference.cache
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.csproj.CopyComplete
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.dll
+C:\Users\Stella\Desktop\iheb sidhom\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.pdb
+G:\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.dll.config
+G:\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.dll
+G:\kindergarten\Solution.Domain\bin\Debug\Solution.Domain.pdb
+G:\kindergarten\Solution.Domain\bin\Debug\EntityFramework.dll
+G:\kindergarten\Solution.Domain\bin\Debug\EntityFramework.SqlServer.dll
+G:\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+G:\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\kindergarten\Solution.Domain\bin\Debug\EntityFramework.xml
+G:\kindergarten\Solution.Domain\bin\Debug\EntityFramework.SqlServer.xml
+G:\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+G:\kindergarten\Solution.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\kindergarten\Solution.Domain\bin\Debug\fr\Microsoft.AspNet.Identity.Core.resources.dll
+G:\kindergarten\Solution.Domain\bin\Debug\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+G:\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.csprojAssemblyReference.cache
+G:\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.csproj.CopyComplete
+G:\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.dll
+G:\kindergarten\Solution.Domain\obj\Debug\Solution.Domain.pdb

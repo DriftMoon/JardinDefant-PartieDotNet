@@ -1,0 +1,1 @@
+Data Source=tcp:solutionwebwithdbdbserver.database.windows.net,1433;Initial Catalog=SolutionWebWithDB_db;User Id=kinderadmin@solutionwebwithdbdbserver;Password=Beligh1995
