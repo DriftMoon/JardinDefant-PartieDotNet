@@ -25,7 +25,7 @@ namespace Solution.Domain.Entities
 
         [ForeignKey("ParentId")]
         public Parent Parent { get; set; }
-
+	//ay haja
         public virtual ICollection<Participation> Participations { get; set; }
         public virtual ICollection<Activite> Activites { get; set; }
 
