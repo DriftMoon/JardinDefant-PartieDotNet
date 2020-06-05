@@ -1,0 +1,17 @@
+﻿using Service.Pattern;
+using Solution.Domain.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Solution.Service
+{
+    public interface IServiceEvent : IService<Event>
+    {
+        IEnumerable<Event> FindEventsByName(string eventname);
+        Event FindEventByQrCode(string qrcode);
+        IEnumerable<Event> FindEventsByCtegory(string eventcategory);
+    }
+}

@@ -1,0 +1,84 @@
+﻿@model Solution.Web2.Models.EventModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2>Details</h2>
+<!-- Page Header Start here -->
+<section class="page-header section-notch">
+    <div class="overlay">
+        <div class="container">
+            <h3>Event Details Page</h3>
+            <ul>
+                <li><a href="/Event">Home</a></li>
+                <li>-</li>
+                <li>Event Details</li>
+            </ul>
+        </div><!-- container -->
+    </div><!-- overlay -->
+</section><!-- page header -->
+<!-- Page Header End here -->
+<!-- Blog Post Start here -->
+<section class="singel-class event-single padding-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="single-post">
+                    <div class="post-image">
+                        @{string path = "~/Content/Uploads/" + @Html.DisplayFor(model => model.Image);}
+
+                        <img src="@Url.Content(path)" alt="post image" class="img-responsive">
+                        <div class="event-counter">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <h4>The Event Will Start In</h4>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <ul id="countdown" class="countdown">
+                                        <li class="clock-item"><span class="count-number days">@ViewBag.day</span><p class="days_text count-text">Days</p></li>
+
+                                        <li class="clock-item"><span class="count-number hours">@ViewBag.hour</span><p class="hours_text count-text">Hours</p></li>
+
+                                        <li class="clock-item"><span class="count-number minutes">@ViewBag.minute</span><p class="minutes_text count-text">Min</p></li>
+
+                                        <li class="clock-item"><span class="count-number seconds">@ViewBag.second</span><p class="seconds_text count-text">Sec</p></li>
+                                    </ul>
+                                </div>
+                            </div><!-- row -->
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h3>@Html.DisplayFor(model => model.Name)</h3>
+                        <ul class="post-meta">
+                            <li><span class="icon flaticon-signs"></span> <a href="#">@Html.DisplayFor(model => model.Category)</a></li>
+                            <li><span class="icon flaticon-alarm-clock"></span> <a href="#">Time: @Html.DisplayFor(modelItem => modelItem.Debut.Hour):@Html.DisplayFor(modelItem => modelItem.Debut.Minute) to @Html.DisplayFor(modelItem => modelItem.Fin.Hour):@Html.DisplayFor(modelItem => modelItem.Fin.Minute)</a></li>
+                        </ul>
+                        <p>@Html.DisplayFor(modelItem => modelItem.Description)</p>
+                    </div>
+                </div><!-- single post -->
+            </div>
+            <div class="col-lg-4">
+                <div class="sidebar">
+                    <!-- sidebar item -->
+                    <div class="sidebar-item">
+                        <h3 class="sidebar-title">All Categories</h3>
+
+                        <ul class="sidebar-categories">
+                            <li><a href="/Event"><i class="fa fa-angle-double-right" aria-hidden="true"></i> All <span>@ViewBag.all</span></a></li>
+                            <li><a href="../IndexFilter?category=Educative"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Educative  <span>@ViewBag.educative</span></a></li>
+                            <li><a href="../IndexFilter?category=Sport"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sport  <span>@ViewBag.sport</span></a></li>
+                            <li><a href="../IndexFilter?category=Workshops"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Workshops <span>@ViewBag.workshops</span></a></li>
+                            <li><a href="../IndexFilter?category=Music"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Music <span>@ViewBag.music</span></a></li>
+                         
+                        </ul>
+                    </div><!-- sidebar item -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- Blog Post End here -->

@@ -1,0 +1,65 @@
+﻿@model Solution.Web2.Models.ActiviteVM
+@{string path = "~/Content/Uploads/" + @Model.Affiche;}
+
+
+
+<div class="col-lg-4 col-sm-6 col-xs-12">
+    <div class="class-item">
+        <div class="image">
+            <img src="@Url.Content(path)" alt="Affiche" class="img-responsive" />
+        </div>
+        <ul class="schedule">
+            <li>
+                <span>Class Size</span>
+                <span>@Model.ClassSize</span>
+            </li>
+            <li>
+                <span>Years Old</span>
+                <span>@Model.AgeMin - @Model.AgeMax</span>
+            </li>
+            <li>
+                <span>Tution Fee</span>
+                <span>$1500</span>
+            </li>
+        </ul>
+        <div class="content">
+            <h4> @Html.ActionLink(@Model.Title, "Details", new { id = Model.ActiviteID })</h4>
+            <p><span>Class Time</span> : 08:00 am - 10:00 am</p>
+            <p><span>Theme </span>@Model.Theme</p>
+            <p>@Model.Description</p>
+            <p><span>Outils </span> : @Model.Outils</p>
+        </div>
+        <div class="address">
+            <p><span><i class="fa fa-home" aria-hidden="true"></i></span> @Model.Location</p>
+        </div>
+    </div><!-- class item -->
+</div>
+
+
+
+
+@*<div class="col-lg-4 col-sm-6 col-xs-12">
+    <div class="event-item " style="flex:1; padding: 16px;">
+        <div class="event-image">
+            <img src="@Url.Content(path)" alt="Affiche" class="img-responsive" />
+            <div class="date">
+                <span>24</span>
+                <p>March</p>
+            </div>
+        </div>
+        <div class="event-content" style="width:348px ; max-height:200px">
+            <h4>@Model.Title</h4>
+            <ul>
+                <li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>08:00 am - 10:00 am</li>
+                <li><span><i class="fa fa-home" aria-hidden="true"></i></span>218 New Elephant Road Dhaka</li>
+            </ul>
+            <p style="width:250px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">@Model.Description</p>
+            @Html.ActionLink("Join Now", "Details", new { id = Model.ActiviteID })
+        </div>
+    </div>*@
+
+
+
+    <!-- event blog -->
+    <!-- event End here -->
+    @section scripts{}

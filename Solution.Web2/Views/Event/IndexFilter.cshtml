@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Solution.Web2.Models.EventModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>
+
+                <div id="search_open" class="gc_search_box" style="display: block;">
+                    @Html.TextBox("name")
+                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </div>
+            </td>
+        </tr>
+    </table>
+}
+        </ul>
+
+<section class="event event-two padding-120">
+    <div class="container">
+        <div class="event-items">
+            <div class="row">
+
+
+                @foreach (var item in Model)
+                {
+
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+
+                        <div class="event-item">
+                            <div class="event-image">
+                                <a href="Details/@Html.DisplayFor(modelItem => item.EventId)">
+
+                                    @{string path = "~/Content/Uploads/" + @item.Image;}
+                                    <img src="@Url.Content(path)" width="10" height="10">
+                                </a>
+                                <div class="date">
+                                    <span>@Html.DisplayFor(modelItem => item.DateEvent.Day)</span>
+                                    <p>@Convert.ToDateTime(item.DateEvent).ToString("MMM")</p>
+                                </div>
+                            </div>
+                            <div class="event-content">
+
+                                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Name) </h4>
+
+                                <ul>
+                                    <li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>@Html.DisplayFor(modelItem => item.Debut.Hour):@Html.DisplayFor(modelItem => item.Debut.Minute) - @Html.DisplayFor(modelItem => item.Fin.Hour):@Html.DisplayFor(modelItem => item.Fin.Minute)</li>
+                                    <li><span><i class="fa fa-home" aria-hidden="true"></i></span>@Html.DisplayFor(modelItem => item.Category)</li>
+                                </ul>
+
+                                <p>@Html.DisplayFor(modelItem => item.Description)</p>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.EventId })
+                                @Html.ActionLink("Delete", "Delete", new { id = item.EventId })
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                }
+
+
+
+            </div>
+
+        </div>
+</section>

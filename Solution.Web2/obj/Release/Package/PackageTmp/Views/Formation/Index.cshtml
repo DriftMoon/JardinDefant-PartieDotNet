@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Solution.Web2.Models.FormationVM>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<button type="button" class="btn btn-default"><a href="@Url.Action("Create", "Formation")">Add Formation</a></button>
+
+
+
+<section class="page-header section-notch">
+    <div class="overlay">
+        <div class="container">
+            <h3>Don’t Miss Our Events</h3>
+            <ul>
+                <li><a href="index-2.html">Home</a></li>
+                <li>-</li>
+                <li>Events</li>
+            </ul>
+        </div><!-- container -->
+    </div><!-- overlay -->
+</section>
+<div class="col-lg-4">
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <form>
+                @using (Html.BeginForm())
+                {
+                    //@Html.TextBox("searchString", "", new { @class = "sidebar sidebar-item form" })
+                    <input type="text" name="searchString" placeholder="Search Your Course...">
+                    <button type="submit" id="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                }
+                </form>
+            </div>
+        </div>
+    </div>
+                <!-- Blog -->
+                <!-- Blog List View -->
+                <section class="event event-two padding-120">
+                    <div class="container">
+                        <div class="event-items">
+                            <div class="row">
+                                @if (Model != null)
+                                {
+
+                                    foreach (var item in Model)
+                                    {
+                                        @Html.Partial("_DisplayFormation", item)
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
