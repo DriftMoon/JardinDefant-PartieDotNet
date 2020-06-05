@@ -25,11 +25,14 @@ namespace Solution.Service
             return false;
 
         }
+        
 
-        public List<Participation> getMandates()
+
+        public List<Participation> getByEnfantID(int EnfantID)
         {
-            IEnumerable<Participation> m = (from Participations in utk.GetRepositoryBase<Participation>().GetAll()
+            IEnumerable<Participation> m = (from Participations in utk.GetRepositoryBase<Participation>().GetMany()
                                         select Participations);
+                                       m = m.Where(x => x.EnfantId == EnfantID);
             List<Participation> list = m.ToList<Participation>();
             return list;
         }

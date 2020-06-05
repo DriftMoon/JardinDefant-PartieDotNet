@@ -163,7 +163,7 @@ namespace Solution.Web2.Controllers
                 }
 
             }
-            List<Activite> Courses = t.ToList();
+            List<Activite> Courses = t.OrderByDescending(act => act.Start).Take(5).ToList();
             ViewData["Courses"] = Courses;
 
             return View(pvm);
@@ -179,7 +179,7 @@ namespace Solution.Web2.Controllers
             {
                 if ((f.NbrMax > f.Reserved)&& (!MyParticipationService.dejaInscrit(E.EnfantId,f.FormationID))) { 
                     Enfats.Add(new EnfantVM()
-                {
+                  {
                      EnfantId= E.EnfantId,
                      Age = E.Age,
                      Image= E.Image,
@@ -192,7 +192,6 @@ namespace Solution.Web2.Controllers
             
                 }
             }
-
             return View(Enfats);
         }
 
@@ -204,7 +203,8 @@ namespace Solution.Web2.Controllers
             Participation p = new Participation()
             {
                 EnfantId = IdEnfant,
-                FormationID= IdFormation
+                FormationID= IdFormation,
+                Title= f.Title
 
             };
             MyFormationService.Update(f);
@@ -226,33 +226,46 @@ namespace Solution.Web2.Controllers
         [HttpPost]
         public ActionResult Create(FormationVM FormationVM, HttpPostedFileBase Affiche)
         {
-            if (!ModelState.IsValid || Affiche == null || Affiche.ContentLength == 0)
+            //if (!ModelState.IsValid || Affiche == null || Affiche.ContentLength == 0)
+            //{
+            //    RedirectToAction("Create");
+            //}
+            if (FormationVM.Start > FormationVM.End)
             {
-                RedirectToAction("Create");
+                ModelState.AddModelError("Start", "Date de début est erronée");
+                ModelState.AddModelError("End", "Date de Fin est erronée");
+                return View(FormationVM);
             }
-            Formation FormationDomain = new Formation()
-            {
+                try
+                {
+                    Formation FormationDomain = new Formation()
+                    {
+                        Title = FormationVM.Title,
+                        Start = DateTime.UtcNow,
+                        End = FormationVM.End,
+                        Description = FormationVM.Description,
+                        Affiche = Affiche.FileName,
+                        NbrMax = FormationVM.NbrMax,
+                        Theme = FormationVM.Theme,
+                        Location = FormationVM.Location,
+                        Price = FormationVM.Price,
 
-                Title = FormationVM.Title,
-                Start = DateTime.UtcNow,
-                End = FormationVM.End,
-                Description = FormationVM.Description,
-                Affiche = Affiche.FileName,
-                NbrMax = FormationVM.NbrMax,
-                Theme = FormationVM.Theme,
-                Location = FormationVM.Location,
-                Price = FormationVM.Price,
+                        //    nomuser = User.Identity.GetUserName(),
+                        UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
+                    };
 
-                //    nomuser = User.Identity.GetUserName(),
-                UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-            };
+                    MyFormationService.Add(FormationDomain);
+                    MyFormationService.Commit();
 
-            MyFormationService.Add(FormationDomain);
-            MyFormationService.Commit();
+                    var path = Path.Combine(Server.MapPath("~/Content/Uploads"), Affiche.FileName);
+                    Affiche.SaveAs(path);
+                    return RedirectToAction("Index");
+                }
+                catch (Exception ex)
+                {
+                    return View(FormationVM);
+                }
 
-            var path = Path.Combine(Server.MapPath("~/Content/Uploads"), Affiche.FileName);
-            Affiche.SaveAs(path);
-            return RedirectToAction("Index");
         }
 
         // GET: Formation/Edit/5

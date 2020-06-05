@@ -17,7 +17,8 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <Use64BitIISExpress>true</Use64BitIISExpress>
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
     <IISExpressSSLPort>44389</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -199,6 +200,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ActiviteController.cs" />
     <Compile Include="Controllers\ActiviteWebApiController.cs" />
+    <Compile Include="Controllers\EnfantController.cs" />
     <Compile Include="Controllers\FormationController.cs" />
     <Compile Include="Controllers\FormationWebApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -214,6 +216,7 @@
     <Compile Include="Models\FormationVM.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ParticipationVM.cs" />
     <Compile Include="Models\QuestionVM.cs" />
     <Compile Include="Models\QuizVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -4544,6 +4547,13 @@
     <Content Include="Scripts\umd\popper-utils.min.js.map" />
     <Content Include="Scripts\umd\popper-utils.js.map" />
     <Content Include="Views\Activite\AjoutDocument.cshtml" />
+    <Content Include="Views\Enfant\Index.cshtml" />
+    <Content Include="Views\Enfant\Edit.cshtml" />
+    <Content Include="Views\Enfant\Delete.cshtml" />
+    <Content Include="Views\Enfant\_DisplayEnfant.cshtml" />
+    <Content Include="Views\Enfant\Participation.cshtml" />
+    <Content Include="Views\Enfant\Annuler.cshtml" />
+    <Content Include="Views\Enfant\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -4603,6 +4613,8 @@
           <DevelopmentServerPort>49988</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:44389/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:44389/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

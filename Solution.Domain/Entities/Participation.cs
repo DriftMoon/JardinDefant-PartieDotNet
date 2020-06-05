@@ -14,7 +14,7 @@ namespace Solution.Domain.Entities
         public int EnfantId { get; set; }
         [Key, Column(Order = 1)]
         public int FormationID { get; set; }
-
+        public string Title { get; set; }
         public virtual Enfant Enfant { get; set; }
         public virtual Formation Formation { get; set; }
     }

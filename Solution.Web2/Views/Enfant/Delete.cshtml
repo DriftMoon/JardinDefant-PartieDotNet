@@ -1,0 +1,22 @@
+﻿@model Solution.Web2.Models.EnfantVM
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2>Supprimer</h2>
+
+<h3>Etes-vous sur de vouloir supprimer cet enfant?</h3>
+<div>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Supprimer" class="btn btn-default" /> |
+        <button type="button"  class="btn btn-default"><a href="@Url.Action("Index", "Enfant")">Retour</a></button>
+
+    </div>
+    }
+</div>

@@ -30,7 +30,6 @@ namespace Solution.Domain.Entities
 
         [ForeignKey("UserId")]
         public virtual User user { get; set; }
-
         public virtual ICollection<Enfant> Enfants { get; set; }
 
 

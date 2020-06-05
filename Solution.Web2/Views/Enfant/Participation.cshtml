@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Solution.Web2.Models.ParticipationVM>
+
+@{
+    ViewBag.Title = "Participation";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<h2>Les Participations</h2>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+            @Html.ActionLink("Annuler", "Annuler", new {  IdEnfant=item.EnfantId , IdFormation=item.FormationID })
+        </td>
+    </tr>
+}
+
+</table>

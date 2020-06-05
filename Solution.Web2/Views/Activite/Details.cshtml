@@ -117,21 +117,22 @@
                             }
                             else
                             {
-                                <li>
-                                    @Html.ActionLink("view Doc", "PdfViewer", new { Doc = Model.Document })
-                                </li>
+                        <li>
+                            @Html.ActionLink("view Doc", "PdfViewer", new { Doc = Model.Document })|
+                            @Html.ActionLink("supp Doc", "SuppDocument", new {id = Model.ActiviteID })
+                        </li>
                             }
                         </ul>
 
                     </div><!-- sidebar item -->
                     <div class="sidebar-item">
-                        <h3 class="sidebar-title">Popular Courses</h3>
+                        <h3 class="sidebar-title">Latest Courses</h3>
                         @foreach (var item in courses)
                         {
                             <ul class="sidebar-posts">
                                 <li>
                                     <div class="image">
-                                        <img src="@Url.Content("~/Content/Uploads/" + @item.Title + "latest.jpg")" alt="post image" class="img-responsive">
+                                        <img src="@Url.Content("~/Content/Uploads/" + @item.Title + "latest.jpg")" alt="post image" class="img-responsive"/>
                                     </div>
                                     <div class="content">
                                         @Html.ActionLink(item.Title, "Details", new { id = item.ActiviteID })

@@ -82,7 +82,6 @@ namespace Solution.Web2.Controllers
                 Location = A.Location,
                 //    nomuser = User.Identity.GetUserName(),
                 UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-
             };
             var t = activiteService.GetMany();
             foreach (Activite Act in t)
@@ -109,17 +108,27 @@ namespace Solution.Web2.Controllers
         [HttpPost]
         public ActionResult Create(ActiviteVM ActiviteVM, HttpPostedFileBase Affiche)
         {
-            if (!ModelState.IsValid || Affiche == null || Affiche.ContentLength == 0)
+            //if (!ModelState.IsValid || Affiche == null || Affiche.ContentLength == 0|| ActiviteVM.AgeMin>ActiviteVM.AgeMax)
+            //{
+            //    //ModelState.AddModelError("", "Verify your form !");
+            //    RedirectToAction("Create");
+            //}
+            if (ActiviteVM.AgeMin > ActiviteVM.AgeMax)
             {
-                RedirectToAction("Create");
+                ModelState.AddModelError("AgeMin", "Age Minimum est erronée");
+                ModelState.AddModelError("AgeMax", "Age Maximum est erronée");
+                return View(ActiviteVM);
             }
-            Activite ActiviteDomain = new Activite()
+            try
+            {
+                Activite ActiviteDomain = new Activite()
             {
 
                 Title = ActiviteVM.Title,
                 Description = ActiviteVM.Description,
                 Affiche = Affiche.FileName,
                 Theme = ActiviteVM.Theme,
+                Type = ActiviteVM.Type,
                 Outils = ActiviteVM.Outils,
                 AgeMin = ActiviteVM.AgeMin,
                 AgeMax = ActiviteVM.AgeMax,
@@ -128,6 +137,7 @@ namespace Solution.Web2.Controllers
                 Professor = ActiviteVM.Professor,
                 Start = ActiviteVM.Start,
                 Location = ActiviteVM.Location,
+                Document= "",
                 //    nomuser = User.Identity.GetUserName(),
                 UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
             };
@@ -138,6 +148,12 @@ namespace Solution.Web2.Controllers
             var path = Path.Combine(Server.MapPath("~/Content/Uploads"), Affiche.FileName);
             Affiche.SaveAs(path);
             return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                return View(ActiviteVM);
+            }
+
         }
 
 
@@ -173,9 +189,7 @@ namespace Solution.Web2.Controllers
         {
             try
             {
-
                 Activite pm = activiteService.GetById((int)id);
-
 
                 pm.Title = p.Title;
                 pm.Description = p.Description;
@@ -245,6 +259,22 @@ namespace Solution.Web2.Controllers
                 Doc.SaveAs(path);
                 return RedirectToAction("Details", new { id = id });
 
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Details", new { id = id });
+            }
+        }
+
+        public ActionResult SuppDocument(int id)
+        {
+            try
+            {
+                Activite pm = activiteService.GetById((int)id);
+                pm.Document = null;
+                activiteService.Update(pm);
+                activiteService.Commit();
+                return RedirectToAction("Details", new { id = id });
             }
             catch (Exception ex)
             {

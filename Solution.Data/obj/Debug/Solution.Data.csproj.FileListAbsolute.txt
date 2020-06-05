@@ -109,3 +109,4 @@ G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.CopyComplete
 G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.dll
 G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.pdb
 G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations.mig1305.resources
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations._0206.resources

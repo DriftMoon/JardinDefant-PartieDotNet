@@ -1,0 +1,18 @@
+﻿@model Solution.Web2.Models.EnfantVM
+@{string path = "~/Content/Uploads/" + @Model.Image;}
+
+
+<div class="gallery-item branding packing">
+    <div class="gallery-image">
+        <img src="@Url.Content(path)" alt="gallery image" class="img-responsive">
+        <div class="gallery-overlay" style="color: #ffc000"><div class="bg" style="color: #ffc000"></div></div>
+        <div class="gallery-content">
+           <h6>@Html.ActionLink("Modifier", "Edit", new { id = Model.EnfantId }, new { @style = "color:white" })</h6>
+            <h6>@Html.ActionLink("Supprimer", "Delete", new { id = Model.EnfantId }, new { @style = "color:white" })</h6>
+            <h6>@Html.ActionLink("Participations", "Participation", new { id = Model.EnfantId }, new { @style = "color:white" })</h6>
+            <h4>@Model.Nom @Model.Prenom</h4>
+            <span>Age: @Model.Age</span>
+            
+        </div>
+    </div>
+</div>

@@ -81,7 +81,7 @@ namespace Solution.Web2.Controllers
                     Start = DateTime.UtcNow,
                     End = FormationVM.End,
                     Description = FormationVM.Description,
-                    Affiche = FormationVM.Affiche,
+                    Affiche = "event_03.jpg",
                     NbrMax = FormationVM.NbrMax,
                     Theme = FormationVM.Theme,
                     Location = FormationVM.Location,

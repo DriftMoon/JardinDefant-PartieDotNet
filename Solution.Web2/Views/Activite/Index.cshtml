@@ -28,8 +28,6 @@
             </div>
         </div>
 
-
-
         <section class="classes padding-120">
             <div class="container">
                 <div class="row">
@@ -45,13 +43,7 @@
                 </div>
             </div>
         </section>
-
-
     </main>
-
-
-
-
 </div>
 @Html.PagedListPager(Model, i=> Url.Action("Index","Activite",new{ i, search=Request.QueryString["searchString"]}))
 

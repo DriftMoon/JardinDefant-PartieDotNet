@@ -35,7 +35,7 @@
     <div class="col-md-4 col-sm-4 col-xs-12">
         @Html.LabelFor(model => model.Start, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.Start,"{0:yyyy-MM-ddThh:mm:ss}", new { htmlAttributes = new { @class = "form-control", type = "datetime-local" } })
+            @Html.EditorFor(model => model.Start, "{0:yyyy-MM-ddThh:mm:ss}", new { htmlAttributes = new { @class = "form-control", type = "datetime-local" } })
             @Html.ValidationMessageFor(model => model.Start, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -43,7 +43,7 @@
     <div class="col-md-4 col-sm-4 col-xs-12">
         @Html.LabelFor(model => model.End, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.EditorFor(model => model.End,"{0:yyyy-MM-ddThh:mm:ss}", new { htmlAttributes = new { @class = "form-control", type = "datetime-local" } })
+            @Html.EditorFor(model => model.End, "{0:yyyy-MM-ddThh:mm:ss}", new { htmlAttributes = new { @class = "form-control", type = "datetime-local" } })
             @Html.ValidationMessageFor(model => model.End, "", new { @class = "text-danger" })
         </div>
     </div>
@@ -106,7 +106,7 @@
             </div>
         </div>*@
 
-    <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" value="Create" class="btn btn-default" />
         </div>
@@ -115,7 +115,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Retour", "Index")
 </div>
 
 @section scripts {}

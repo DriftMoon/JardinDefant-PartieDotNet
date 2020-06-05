@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Solution.Web2.Models.EnfantVM>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<div class="content-wrapper">
+    <button type="button" class="btn btn-default"><a href="@Url.Action("Create", "Enfant")">Ajouter Enfant</a></button>
+
+    <main class="main-content">
+
+        <section class="gallery padding-120">
+            <div class="container">
+                <div class="gallery-items">
+                    @if (Model != null)
+                    {
+
+                        foreach (var item in Model)
+                        {
+
+                            @Html.Partial("_DisplayEnfant", item)
+                        }
+                    }
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+
+
+@*<table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prenom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdFormation)
+            </th>
+            <th></th>
+        </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdFormation)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.EnfantId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.EnfantId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.EnfantId })
+            </td>
+        </tr>
+    }
+
+    </table>*@
