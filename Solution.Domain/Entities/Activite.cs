@@ -26,7 +26,7 @@ namespace Solution.Domain.Entities
         public string Document { get; set; }
         public DateTime Start { get; set; }
         public string Professor { get; set; }
-        public string UserId { get; set; }
+        public int UserId { get; set; }
 
         [ForeignKey("UserId")]
         public virtual User user { get; set; }

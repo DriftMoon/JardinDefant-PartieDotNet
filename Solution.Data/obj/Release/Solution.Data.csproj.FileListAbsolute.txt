@@ -12,15 +12,9 @@ G:\kindergarten\Solution.Data\bin\Release\EntityFramework.xml
 G:\kindergarten\Solution.Data\bin\Release\EntityFramework.SqlServer.xml
 G:\kindergarten\Solution.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
 G:\kindergarten\Solution.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
-G:\kindergarten\Solution.Data\bin\Release\fr\Microsoft.AspNet.Identity.Core.resources.dll
-G:\kindergarten\Solution.Data\bin\Release\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
 G:\kindergarten\Solution.Data\obj\Release\Solution.Data.csprojAssemblyReference.cache
-G:\kindergarten\Solution.Data\obj\Release\Solution.Data.Migrations.mig0403.resources
-G:\kindergarten\Solution.Data\obj\Release\Solution.Data.Migrations.migration1903.resources
-G:\kindergarten\Solution.Data\obj\Release\Solution.Data.Migrations.mig19032340.resources
-G:\kindergarten\Solution.Data\obj\Release\Solution.Data.Migrations.early0104.resources
-G:\kindergarten\Solution.Data\obj\Release\Solution.Data.csproj.GenerateResource.cache
 G:\kindergarten\Solution.Data\obj\Release\Solution.Data.csproj.CopyComplete
 G:\kindergarten\Solution.Data\obj\Release\Solution.Data.dll
 G:\kindergarten\Solution.Data\obj\Release\Solution.Data.pdb
-G:\kindergarten\Solution.Data\obj\Release\Solution.Data.Migrations._1004.resources
+G:\kindergarten\Solution.Data\obj\Release\Solution.Data.Migrations._13061714.resources
+G:\kindergarten\Solution.Data\obj\Release\Solution.Data.csproj.GenerateResource.cache

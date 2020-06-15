@@ -1,4 +1,5 @@
-﻿using Solution.Domain.Entities;
+﻿using Microsoft.AspNet.Identity;
+using Solution.Domain.Entities;
 using Solution.Service;
 using Solution.Web2.Models;
 using System;
@@ -30,7 +31,7 @@ namespace Solution.Web2.Controllers
         public ActionResult Index()
         {
             var Enfats = new List<EnfantVM>();
-            IEnumerable<Enfant> pm = MyEnfantService.SearchEnfantByParent("f43c21cf-f35a-4897-a9e3-343c00afe7b2");
+            IEnumerable<Enfant> pm = MyEnfantService.SearchEnfantByParent(User.Identity.GetUserId<int>());
             foreach (Enfant E in pm)
             {
                 Enfats.Add(new EnfantVM()
@@ -78,8 +79,8 @@ namespace Solution.Web2.Controllers
                     Age = enfantVM.Age,
                     Sexe = enfantVM.Sexe,
                     //    nomuser = User.Identity.GetUserName(),
-                    ParentId = "f43c21cf-f35a-4897-a9e3-343c00afe7b2"
-                };
+                    ParentId = User.Identity.GetUserId<int>()
+            };
 
                 MyEnfantService.Add(EnfantDomain);
                 MyEnfantService.Commit();
@@ -121,7 +122,7 @@ namespace Solution.Web2.Controllers
                 p.Age = pm.Age;
                 p.Sexe = pm.Sexe;
                 p.Image = Image.FileName;
-                p.ParentId = "f43c21cf-f35a-4897-a9e3-343c00afe7b2";
+                p.ParentId = User.Identity.GetUserId<int>();
 
                 MyEnfantService.Update(p);
                 MyEnfantService.Commit();

@@ -55,7 +55,9 @@
     <Compile Include="IPublicationService.cs" />
     <Compile Include="IQuestionService.cs" />
     <Compile Include="IQuizService.cs" />
+    <Compile Include="IReclamationService.cs" />
     <Compile Include="IReplyService.cs" />
+    <Compile Include="IResponseService.cs" />
     <Compile Include="IUserService.cs" />
     <Compile Include="LikeService.cs" />
     <Compile Include="ParticipationService.cs" />
@@ -63,7 +65,9 @@
     <Compile Include="PublicationService.cs" />
     <Compile Include="QuestionService.cs" />
     <Compile Include="QuizService.cs" />
+    <Compile Include="ReclamationService.cs" />
     <Compile Include="ReplyService.cs" />
+    <Compile Include="ResponseService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>

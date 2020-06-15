@@ -1,0 +1,128 @@
+﻿@model Solution.Web2.Models.PublicationVM
+@{string path = "~/Content/Uploads/" + @Model.image;}
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+
+
+<hr style="border:none" />
+
+<main class="main-content">
+
+    <!-- Blog -->
+
+    <div class="container">
+        <div class="row">
+            <!-- Blog Content -->
+            <div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
+
+                <!-- Blog detail -->
+                <div class="blog-detail-holder" style="border:6px solid #999999;border-radius: 30px">
+                    <div class="author-header" style="background-color:white; ;border-radius: 30px 30px 0px 0px ;" ">
+                        <h2 style="text-align:center">@Model.title</h2>
+                        <div class="aurhor-img-name pull-left">
+                            <img src="@Url.Content("~/Content/Uploads/stella.jpg")" alt="" height="60" width="60">
+                            <strong>by <i class="red-color">Stella</i></strong>
+                            <span>on @Model.creationDate </span>
+                        </div>
+                        <div class="share-option pull-right">
+                            <span id="share-btn1"><i class="fa fa-share-alt"></i>Share</span>
+                            <div id="show-social-icon1" class="on-hover-share">
+                                <ul class="social-icons">
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                    <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-detail">
+                        <figure>
+                            <img src="@Url.Content(path)" width="1000px" height="800" " alt="">
+                        </figure>
+                        <article>
+                            <p>@Model.description</p>
+                        </article>
+                    </div>
+                    <div class="tags-holder">
+                        <ul class="tags-list pull-left">
+                            <li><i class="fa fa-tags"></i>Tags</li>
+
+
+                            <li><a id="shCom">Comments</a></li>
+                        </ul>
+                        <ul class="social-icons pull-right">
+                            <li>Share this post</li>
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                            <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div id="Divcomment" style="display:none">
+                        @Html.Action("GetComments", new { idpub = Model.PublicationId })
+                    </div>
+                    <div class="form-group" style="margin: 0;">
+                        <textarea id="comm" class="form-control style-d" rows="2" placeholder="Write Comments here..."></textarea>
+                        <i class="fa fa-pencil-square-o"></i>
+                    </div>
+                </div>
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.PublicationId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = Model.PublicationId }) |
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
+            </div>
+
+        </div>
+</main>
+
+@section Scripts{
+    <script>
+    $(function() {
+        function getContent(){
+            return document.getElementById("comm").value
+        }
+
+        $("#comm").keyup(function (e){
+            var keycode = (event.keyCode ? event.keyCode : event.which);
+            if(keycode == '13'){
+                var idpub=@Model.PublicationId;
+                var contenu = document.getElementById("comm").value;
+                if (contenu == "") {
+                    window.alert("un commentairene peut pas etre vide ");
+                }
+                else {
+
+                    $.ajax({
+                        url: '@Url.Action("PostComment", "Publication")' + "?contenu=" + contenu + "&idpub=" + idpub,
+                        type: "POST",
+                        success: function (result) {
+                            $('#Divcomment').append(result)
+                            $("#comm").val("")
+                        }
+                        //data: {id: idpub, con: contenu},
+                    })
+                    /* .done(function (response) {
+                     debugger;
+
+                     //$('#Divcomment').html(response);
+                     alert(respose.d)
+
+                 });*/
+                }
+            }
+
+
+        })
+    });
+        $("#shCom").click(function(){
+            $("#Divcomment").toggle();
+        });
+
+    </script>
+}

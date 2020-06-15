@@ -10,11 +10,12 @@ using System.Threading.Tasks;
 
 namespace Solution.Data
 {
-    public class MyContext:IdentityDbContext<User>
+    public class MyContext : IdentityDbContext<User, CustomRole, int, CustomUserLogin, CustomUserRole, CustomUserClaim>
     {
         public MyContext():base("KinderGarten")
         {
-
+            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.ProxyCreationEnabled = false;
             Database.SetInitializer(new ContexInit());
 
         }

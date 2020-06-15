@@ -21,7 +21,7 @@ namespace Solution.Domain.Entities
         public string Image { get; set; }
         public int Age { get; set; }
         public Sexe Sexe { get; set; }
-        public string ParentId { get; set; }
+        public int ParentId { get; set; }
 
         [ForeignKey("ParentId")]
         public Parent Parent { get; set; }

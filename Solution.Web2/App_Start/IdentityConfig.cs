@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
+using Solution.Domain.Entities;
 using Solution.Web2.Models;
 
 namespace Solution.Web2
@@ -86,6 +87,8 @@ namespace Solution.Web2
             }
             return manager;
         }
+
+     
     }
 
     // Configurer le gestionnaire de connexion d'application qui est utilisé dans cette application.

@@ -12,7 +12,7 @@ namespace Solution.Data.Configurations
     {
         public ActiviteConfiguration()
         {
-            HasRequired(p => p.user).WithMany(p => p.Activites).HasForeignKey(p => p.UserId);
+            HasRequired(p => p.user).WithMany(p => p.Activites).HasForeignKey(p => p.UserId).WillCascadeOnDelete(false);
 
         }
     }

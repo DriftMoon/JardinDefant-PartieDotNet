@@ -11,7 +11,7 @@ G:\kindergarten\Solution.Domain\bin\Release\Microsoft.AspNet.Identity.Core.xml
 G:\kindergarten\Solution.Domain\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
 G:\kindergarten\Solution.Domain\bin\Release\fr\Microsoft.AspNet.Identity.Core.resources.dll
 G:\kindergarten\Solution.Domain\bin\Release\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-G:\kindergarten\Solution.Domain\obj\Release\Solution.Domain.csprojAssemblyReference.cache
 G:\kindergarten\Solution.Domain\obj\Release\Solution.Domain.csproj.CopyComplete
 G:\kindergarten\Solution.Domain\obj\Release\Solution.Domain.dll
 G:\kindergarten\Solution.Domain\obj\Release\Solution.Domain.pdb
+G:\kindergarten\Solution.Domain\obj\Release\Solution.Domain.csprojAssemblyReference.cache

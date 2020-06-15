@@ -55,7 +55,7 @@ namespace Solution.Web2.Controllers
                     var path2 = Path.Combine(Server.MapPath("~/Content/Uploads"), p.Title + "thumb.jpg");
                     thumb.SaveJpg(path2, 99);
                 }
-               
+                
 
                 Formations.Add(new FormationVM()
                 {
@@ -174,7 +174,7 @@ namespace Solution.Web2.Controllers
         {
             var Enfats = new List<EnfantVM>();
             Formation f = MyFormationService.GetById((int)IdFormation);
-            IEnumerable<Enfant> pm = MyEnfantService.SearchEnfantByParent("f43c21cf-f35a-4897-a9e3-343c00afe7b2");
+            IEnumerable<Enfant> pm = MyEnfantService.SearchEnfantByParent(User.Identity.GetUserId<int>());
             foreach (Enfant E in pm)
             {
                 if ((f.NbrMax > f.Reserved)&& (!MyParticipationService.dejaInscrit(E.EnfantId,f.FormationID))) { 
@@ -236,12 +236,11 @@ namespace Solution.Web2.Controllers
                 ModelState.AddModelError("End", "Date de Fin est erronée");
                 return View(FormationVM);
             }
-                try
-                {
+                
                     Formation FormationDomain = new Formation()
                     {
                         Title = FormationVM.Title,
-                        Start = DateTime.UtcNow,
+                        Start = FormationVM.Start,
                         End = FormationVM.End,
                         Description = FormationVM.Description,
                         Affiche = Affiche.FileName,
@@ -251,20 +250,16 @@ namespace Solution.Web2.Controllers
                         Price = FormationVM.Price,
 
                         //    nomuser = User.Identity.GetUserName(),
-                        UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-                    };
+                        UserId = User.Identity.GetUserId<int>()
+        };
 
                     MyFormationService.Add(FormationDomain);
                     MyFormationService.Commit();
-
+                
                     var path = Path.Combine(Server.MapPath("~/Content/Uploads"), Affiche.FileName);
                     Affiche.SaveAs(path);
                     return RedirectToAction("Index");
-                }
-                catch (Exception ex)
-                {
-                    return View(FormationVM);
-                }
+                
 
         }
 
@@ -295,8 +290,7 @@ namespace Solution.Web2.Controllers
         [HttpPost]
         public ActionResult Edit(int id, FormationVM pm, HttpPostedFileBase Affiche)
         {
-            try
-            {
+            
 
                 Formation p = MyFormationService.GetById((int)id);
 
@@ -311,18 +305,14 @@ namespace Solution.Web2.Controllers
                 p.Location = pm.Location;
                 p.NbrMax = pm.NbrMax;
                 p.Price = pm.Price;
-
-                MyFormationService.Update(p);
+                p.UserId = User.Identity.GetUserId<int>();
+            MyFormationService.Update(p);
                 MyFormationService.Commit();
 
                 var path = Path.Combine(Server.MapPath("~/Content/Uploads"), Affiche.FileName);
                 Affiche.SaveAs(path);
                 return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                return View(pm);
-            }
+          
         }
 
         // GET: Formation/Delete/5
@@ -390,10 +380,10 @@ namespace Solution.Web2.Controllers
                     Price = e.Price,
 
                     //    nomuser = User.Identity.GetUserName(),
-                    UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
+                    UserId = User.Identity.GetUserId<int>()
 
 
-                };
+            };
                 MyFormationService.Add(v);
                 
             }

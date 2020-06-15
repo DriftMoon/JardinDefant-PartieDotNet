@@ -12,7 +12,7 @@ namespace Solution.Data.Configurations
     {
         public EnfantConfiguration()
         {
-            HasRequired(p => p.Parent).WithMany(p => p.Enfants).HasForeignKey(p => p.ParentId);
+            HasRequired(p => p.Parent).WithMany(p => p.Enfants).HasForeignKey(p => p.ParentId).WillCascadeOnDelete(false);
         }
     }
 }

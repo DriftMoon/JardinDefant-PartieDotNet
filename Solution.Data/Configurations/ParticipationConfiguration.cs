@@ -12,7 +12,7 @@ namespace Solution.Data.Configurations
     {
         public ParticipationConfiguration()
         {
-            HasRequired(p => p.Enfant).WithMany(p => p.Participations).HasForeignKey(p => p.EnfantId);
+            HasRequired(p => p.Enfant).WithMany(p => p.Participations).HasForeignKey(p => p.EnfantId).WillCascadeOnDelete(false);
 
         }
     }

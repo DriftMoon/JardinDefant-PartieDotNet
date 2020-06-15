@@ -1,0 +1,26 @@
+﻿@model Solution.Web2.Models.ReplyVM
+@{
+    ViewBag.Title = "SingleReply";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+
+
+<ul>
+
+
+    <li class="sub-comment">
+        <ul>
+            <li>
+                <img class="position-center-x" src="@Url.Content("~/Content/Uploads/stella.jpg")" style="width:60px;
+height:60px;">
+                <div class="comment-detail">
+                    <h5><a href="#">Stella</a></h5>
+                    <span>Juin 06, 2020</span>
+                    <p>@Model.Contenu</p>
+
+                </div>
+            </li>
+        </ul>
+    </li>
+</ul>

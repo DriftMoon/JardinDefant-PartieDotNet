@@ -13,6 +13,7 @@ using System.Web.Mvc;
 using PagedList.Mvc;
 using PagedList;
 using Gnostice.StarDocsSDK;
+using Microsoft.AspNet.Identity;
 
 namespace Solution.Web2.Controllers
 {
@@ -46,8 +47,8 @@ namespace Solution.Web2.Controllers
                     Start= p.Start,
                     Location = p.Location,
                     //    nomuser = User.Identity.GetUserName(),
-                    UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-                });
+                    UserId = User.Identity.GetUserId<int>()
+            });
 
             }
             return View(Activites.ToPagedList(i ?? 1 ,3));
@@ -81,8 +82,8 @@ namespace Solution.Web2.Controllers
                 Start = A.Start,
                 Location = A.Location,
                 //    nomuser = User.Identity.GetUserName(),
-                UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-            };
+                UserId = User.Identity.GetUserId<int>()
+        };
             var t = activiteService.GetMany();
             foreach (Activite Act in t)
             {
@@ -139,7 +140,7 @@ namespace Solution.Web2.Controllers
                 Location = ActiviteVM.Location,
                 Document= "",
                 //    nomuser = User.Identity.GetUserName(),
-                UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
+                UserId = User.Identity.GetUserId<int>()
             };
 
             activiteService.Add(ActiviteDomain);
@@ -178,8 +179,8 @@ namespace Solution.Web2.Controllers
                 Start = p.Start,
                 Location = p.Location,
                 //    nomuser = User.Identity.GetUserName(),
-                UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-            };
+                UserId = User.Identity.GetUserId<int>()
+        };
             return View(pm);
         }
 
@@ -187,8 +188,7 @@ namespace Solution.Web2.Controllers
         [HttpPost]
         public ActionResult Edit(int id, ActiviteVM p, HttpPostedFileBase Affiche)
         {
-            try
-            {
+          
                 Activite pm = activiteService.GetById((int)id);
 
                 pm.Title = p.Title;
@@ -204,19 +204,15 @@ namespace Solution.Web2.Controllers
                 pm.Start = p.Start;
                 pm.Location = p.Location;
                     //    nomuser = User.Identity.GetUserName(),
-                pm.UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3";
+                pm.UserId = User.Identity.GetUserId<int>();
 
-                activiteService.Update(pm);
+            activiteService.Update(pm);
                 activiteService.Commit();
 
                 var path = Path.Combine(Server.MapPath("~/Content/Uploads"), Affiche.FileName);
                 Affiche.SaveAs(path);
                 return RedirectToAction("Index");
-            }
-            catch (Exception ex)
-            {
-                return View(p);
-            }
+          
         }
 
         // GET: Activite/Delete/5

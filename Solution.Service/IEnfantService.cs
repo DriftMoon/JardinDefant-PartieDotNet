@@ -11,6 +11,6 @@ namespace Solution.Service
   public  interface IEnfantService : IService<Enfant>
     {
         Enfant GetByID(int EnfantID);
-        IEnumerable<Enfant> SearchEnfantByParent(string ParentId);
+        IEnumerable<Enfant> SearchEnfantByParent(int ParentId);
     }
 }

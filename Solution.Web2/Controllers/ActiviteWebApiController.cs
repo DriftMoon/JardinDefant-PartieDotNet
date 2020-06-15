@@ -1,4 +1,5 @@
-﻿using Solution.Data;
+﻿using Microsoft.AspNet.Identity;
+using Solution.Data;
 using Solution.Domain.Entities;
 using Solution.Service;
 using Solution.Web2.Models;
@@ -42,8 +43,8 @@ namespace Solution.Web2.Controllers
                     Start = p.Start,
                     Location = p.Location,
                     //    nomuser = User.Identity.GetUserName(),
-                    UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-                });
+                    UserId = User.Identity.GetUserId<int>()
+            });
             }
                 return Activites.ToList() ;
         }
@@ -75,8 +76,8 @@ namespace Solution.Web2.Controllers
                     Location = ActiviteVM.Location,
                     Document= ActiviteVM.Document,
                     //    nomuser = User.Identity.GetUserName(),
-                    UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-                });
+                    UserId = User.Identity.GetUserId<int>()
+            });
                 ctx.SaveChanges();
             }
             return Ok();

@@ -41,10 +41,10 @@
       <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.2\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -67,18 +67,12 @@
     <Compile Include="Configurations\ParticipationConfiguration.cs" />
     <Compile Include="Configurations\PublicationConfiguration.cs" />
     <Compile Include="Configurations\QuestionConfiguration.cs" />
+    <Compile Include="Configurations\ReclamationConfiguration.cs" />
     <Compile Include="Configurations\ReplyConfiguration.cs" />
-    <Compile Include="Migrations\202004111909220_1104.cs" />
-    <Compile Include="Migrations\202004111909220_1104.designer.cs">
-      <DependentUpon>202004111909220_1104.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202005130317321_mig1305.cs" />
-    <Compile Include="Migrations\202005130317321_mig1305.designer.cs">
-      <DependentUpon>202005130317321_mig1305.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202006020313373_0206.cs" />
-    <Compile Include="Migrations\202006020313373_0206.designer.cs">
-      <DependentUpon>202006020313373_0206.cs</DependentUpon>
+    <Compile Include="Configurations\ResponseConfiguration.cs" />
+    <Compile Include="Migrations\202006131841535_13062041.cs" />
+    <Compile Include="Migrations\202006131841535_13062041.designer.cs">
+      <DependentUpon>202006131841535_13062041.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
@@ -105,14 +99,8 @@
     <Folder Include="CustomConventions\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004111909220_1104.resx">
-      <DependentUpon>202004111909220_1104.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202005130317321_mig1305.resx">
-      <DependentUpon>202005130317321_mig1305.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006020313373_0206.resx">
-      <DependentUpon>202006020313373_0206.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202006131841535_13062041.resx">
+      <DependentUpon>202006131841535_13062041.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,0 +1,4 @@
+﻿
+@model Solution.Web2.Models.LikeVM
+<p style="text-align:center">( @Html.Action("nbLike", new { idpub = Model.idPub }) Person like this publication )</p>
+<button class="icon flaticon-like" onclick="addLike( @Model.idPub)" style="color:green">like</button>

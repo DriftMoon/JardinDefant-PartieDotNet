@@ -41,11 +41,13 @@ namespace Solution.Web2.Models
         public string Document { get; set; }
 
         [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-ddThh:mm:ss}")]
+        [Display(Name = "Date Début")]
         public DateTime Start { get; set; }
 
         public string Professor { get; set; }
 
-        public string UserId { get; set; }
+        public int UserId { get; set; }
 
     }
 }

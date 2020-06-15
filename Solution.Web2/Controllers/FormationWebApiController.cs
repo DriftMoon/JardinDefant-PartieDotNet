@@ -1,4 +1,5 @@
-﻿using Solution.Data;
+﻿using Microsoft.AspNet.Identity;
+using Solution.Data;
 using Solution.Domain.Entities;
 using Solution.Service;
 using Solution.Web2.Models;
@@ -88,8 +89,8 @@ namespace Solution.Web2.Controllers
                     Price = FormationVM.Price,
 
                     //    nomuser = User.Identity.GetUserName(),
-                    UserId = "f43c21cf-f35a-4897-a9e3-343c00afe7b3"
-                });
+                    UserId = User.Identity.GetUserId<int>()
+            });
                 ctx.SaveChanges();
             }
             return Ok();

@@ -1,0 +1,147 @@
+﻿@model IPagedList<Solution.Web2.Models.PublicationVM>
+@using PagedList.Mvc;
+@using PagedList;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+
+
+@*<div class="content-wrapper">
+
+        <div style="text-align:center" class="navbar"><a data-toggle="modal" data-href="#responsive" href="#responsive"><h1>Create new publication</h1></a></div>
+
+        <button type="button" class="btn btn-default"><a href="@Url.Action("Create", "Publication")">Add Publication</a></button>
+
+        <main class="main-content">
+
+             Blog
+
+            <div class="row">
+
+                 Blog Content
+                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-7 r-full-width">
+
+                     Blog List View
+                    <div class="blog-list-View theme-padding-bottom">
+
+
+                        @if (Model != null)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <div style="margin-left:15%">    @Html.Partial("Pub3", item)</div>//injection de la vue partial
+
+
+
+                            }
+                        }
+
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+
+
+
+
+    </div>*@
+
+
+<div class="col-lg-4">
+    <div class="sidebar">
+        <div class="sidebar-item">
+            <form>
+                @using (Html.BeginForm())
+                {
+                    //@Html.TextBox("searchString", "", new { @class = "sidebar sidebar-item form" })
+                    <input type="text" name="searchString" placeholder="Search Your Course...">
+                    <button type="submit" id="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                }
+            </form>
+        </div>
+    </div>
+</div>
+<section class="page-header section-notch">
+    <div class="overlay">
+        <div class="container">
+            <h3>Our Blog Posts</h3>
+            <ul>
+                <li><a href="index-2.html">Home</a></li>
+                <li>-</li>
+                <li>Posts</li>
+            </ul>
+        </div><!-- container -->
+    </div><!-- overlay -->
+</section>
+<section class="event event-two padding-120">
+    <div class="container">
+        <div class="event-items">
+            <div class="row">
+                @if (Model != null)
+                {
+
+                    foreach (var item in Model)
+                    {
+                        @Html.Partial("Pub3", item)
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+@Html.PagedListPager(Model, i => Url.Action("Index", "Publication", new { i, search = Request.QueryString["searchString"] }))
+
+
+@section scripts{
+    <script>
+                                function addLike( idPub) {
+
+                                    $.ajax({
+                                        url: '@Url.Action("AddLike", "Publication")' + "?idpa=" + idPub,
+                                        type: "POST",
+                                        success: function (result) {
+                                            $("#" + idPub).html(result);
+                                            toastr.success("Like Added !");
+
+
+                                        }
+
+                                    })
+
+
+
+
+                                }
+
+                                function dellLike( idPub) {
+
+
+
+
+                                    $.ajax({
+                                        url: '@Url.Action("DeleteLike", "Publication")' + "?idp=" + idPub,
+                                        type: "POST",
+                                        success: function (result) {
+                                            $("#" + idPub).html(result)
+                                            toastr.warning("Like Deleted !");
+
+
+                                        }
+
+
+                                    })
+
+
+
+
+                                }
+
+
+    </script>
+}

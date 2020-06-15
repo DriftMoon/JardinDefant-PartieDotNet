@@ -100,13 +100,11 @@ G:\kindergarten\Solution.Data\bin\Debug\EntityFramework.xml
 G:\kindergarten\Solution.Data\bin\Debug\EntityFramework.SqlServer.xml
 G:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 G:\kindergarten\Solution.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-G:\kindergarten\Solution.Data\bin\Debug\fr\Microsoft.AspNet.Identity.Core.resources.dll
-G:\kindergarten\Solution.Data\bin\Debug\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
 G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csprojAssemblyReference.cache
-G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations._1104.resources
+G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations._13062041.resources
 G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.GenerateResource.cache
 G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.csproj.CopyComplete
 G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.dll
 G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.pdb
-G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations.mig1305.resources
-G:\kindergarten\Solution.Data\obj\Debug\Solution.Data.Migrations._0206.resources
+G:\kindergarten\Solution.Data\bin\Debug\Solution.Data.dll.CodeAnalysisLog.xml
+G:\kindergarten\Solution.Data\bin\Debug\Solution.Data.dll.lastcodeanalysissucceeded

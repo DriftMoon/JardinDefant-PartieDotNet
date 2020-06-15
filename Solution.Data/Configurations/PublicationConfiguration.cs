@@ -13,9 +13,10 @@ namespace Solution.Data.Configurations
     {
         public PublicationConfiguration()
         {
-            HasOptional(p => p.Owner).WithMany(q => q.publications).HasForeignKey(p => p.OwnerId).WillCascadeOnDelete(false);
+            HasRequired(p => p.Owner).WithMany(q => q.publications).HasForeignKey(p => p.OwnerId).WillCascadeOnDelete(false);
 
             HasMany(p => p.comments).WithOptional(q => q.publication).HasForeignKey(p => p.PublicationId).WillCascadeOnDelete(true);
+
         }
     }
 }

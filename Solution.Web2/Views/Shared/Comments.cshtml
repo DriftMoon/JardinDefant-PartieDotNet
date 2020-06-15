@@ -1,0 +1,130 @@
+﻿@model IEnumerable<Solution.Web2.Models.CommentVM>
+@{
+
+   
+}
+
+<div class="comment-holder">
+    
+    @foreach (var item in Model)
+    {
+        <ul>
+            <li style="padding: 15px;background: #9c9c9c47;">
+                <img class="position-center-x" src="@Url.Content("~/Content/Uploads/stella.jpg")" style="width:80px;
+height:80px;">
+
+                <div class="comment-detail">
+                    <h5><a href="#">by Stella</a></h5>
+                    <span>06/06/2020 </span>
+                    <p>@item.Contenu</p>
+
+                    <ul class="breadcrumbs">
+                        <li><a data-toggle="modal" data-href=@("#responsive"+item.CommentId) a class="reply-btn" style="right:80px" id=@("showRep"+item.CommentId) href=@("#responsive"+item.CommentId)><i class="fa fa-reply"></i>Reply</a></li>
+                    </ul>
+
+
+
+                </div>
+            </li>
+        </ul>
+
+        <div style="background: #9c9c9c47 ; height: 42px; ">
+            <div class="share-option pull-right">
+                @using Microsoft.AspNet.Identity;
+@if (item.OwnerId == User.Identity.GetUserId())
+{
+                <span>
+                    <a href="javascript:void(0)" onclick="supprimerCommentaire(@item.PublicationId,@item.CommentId)" style="float: right">
+                        <i class="fa fa-trash-o fa-lg"></i>
+                    </a>
+                </span>
+}
+            </div>
+
+        </div>
+        <div id=@("Replies"+item.CommentId)>
+            @Html.Action("GetReplies", new { idCom = item.CommentId })
+        </div>
+        <div class="extended_modals">
+            <div class="modal fade in" id=@("responsive"+item.CommentId) tabindex="-1" role="dialog" aria-hidden="false">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            
+                        </div>
+                        <div class="modal-body">
+                            <div class="theme-padding-bottom" align="center">
+                                <div class="form-group" id="rep" style="margin: 0;">
+                                    <h2 style="text-align:center">Add your reply here</h2>
+                                    <textarea class="form-control style-d" id=@("rep"+@item.CommentId) onclick="ajouterReply(@item.CommentId)" rows="2" placeholder="Reply here..."></textarea>
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr />
+    }
+
+</div>
+
+
+
+                            <script>
+                                function supprimerCommentaire(idpub, id) {
+
+                                    if (confirm("are you sure to delete this comment?") == true) {
+
+
+                                        $.ajax({
+                                            url: '@Url.Action("DeleteComment", "Publication")' + "?idPub=" + idpub + "&id=" + id,
+                                            type: "POST",
+                                            success: function (result) {
+                                                $('#Divcomment').html(result)
+
+                                            }
+
+                                        })
+
+
+                                    }
+
+                                }
+
+                                function ajouterReply(idCom) {
+
+
+                                    $("#rep" + idCom).keyup(function (e) {
+                                        var keycode = (event.keyCode ? event.keyCode : event.which);
+                                        if (keycode == '13') {
+
+                                            var contenu = document.getElementById("rep" + idCom).value;
+                                            if (contenu == "") {
+                                                window.alert("un commentairene peut pas etre vide ");
+                                            }
+                                            else {
+
+                                                $.ajax({
+                                                    url: '@Url.Action("PostReply", "Publication")' + "?contenu=" + contenu + "&idcom=" + idCom,
+                                                    type: "POST",
+                                                    success: function (result) {
+                                                        $('#Replies' + idCom).append(result)
+                                                        $("#rep" + idCom).val("")
+                                                    }
+
+                                                })
+
+                                            }
+                                        }
+
+
+                                    })
+                                };
+                              
+                            </script>

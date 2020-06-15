@@ -63,13 +63,16 @@
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\Enfant.cs" />
     <Compile Include="Entities\Formation.cs" />
+    <Compile Include="Entities\KinderGardeen.cs" />
     <Compile Include="Entities\Like.cs" />
     <Compile Include="Entities\Parent.cs" />
     <Compile Include="Entities\Participation.cs" />
     <Compile Include="Entities\Publication.cs" />
     <Compile Include="Entities\Question.cs" />
     <Compile Include="Entities\Quiz.cs" />
+    <Compile Include="Entities\Reclamation.cs" />
     <Compile Include="Entities\Reply.cs" />
+    <Compile Include="Entities\Response.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

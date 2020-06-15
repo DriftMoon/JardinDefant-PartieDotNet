@@ -21,7 +21,6 @@ namespace Solution.Domain.Entities
         public string ownerimg { get; set; }
         public string nomuser { get; set; }
 
-        public string OwnerId { get; set; }
-
+        public int OwnerId { get; set; }
     }
 }

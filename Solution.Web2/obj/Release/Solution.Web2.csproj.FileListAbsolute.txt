@@ -72,10 +72,12 @@ G:\kindergarten\Solution.Web2\bin\Newtonsoft.Json.dll
 G:\kindergarten\Solution.Web2\bin\Owin.dll
 G:\kindergarten\Solution.Web2\bin\PagedList.dll
 G:\kindergarten\Solution.Web2\bin\PagedList.Mvc.dll
+G:\kindergarten\Solution.Web2\bin\RestSharp.dll
 G:\kindergarten\Solution.Web2\bin\Service.Pattern.dll
 G:\kindergarten\Solution.Web2\bin\Solution.Data.dll
 G:\kindergarten\Solution.Web2\bin\Solution.Domain.dll
 G:\kindergarten\Solution.Web2\bin\Solution.Service.dll
+G:\kindergarten\Solution.Web2\bin\StarDocsSDK.dll
 G:\kindergarten\Solution.Web2\bin\System.Net.Http.Formatting.dll
 G:\kindergarten\Solution.Web2\bin\System.Web.Helpers.dll
 G:\kindergarten\Solution.Web2\bin\System.Web.Http.dll

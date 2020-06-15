@@ -43,7 +43,7 @@
         </div>
     </div>
 
- 
+
     <div class="form-group">
         @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
         <div class="col-md-10">
@@ -51,7 +51,13 @@
             @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
         </div>
     </div>
-
+    <div class="form-group">
+        @Html.LabelFor(model => model.Sexe, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            Boy:   @Html.RadioButtonFor(m => m.Sexe, "male")
+            Girl:  @Html.RadioButtonFor(m => m.Sexe, "female")
+        </div>
+    </div>
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" value="Save" class="btn btn-default" />

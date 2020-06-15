@@ -12,7 +12,7 @@ namespace Solution.Data.Configurations
     {
         public QuestionConfiguration()
         {
-            HasRequired(p => p.Quiz).WithMany(p => p.Questions).HasForeignKey(p => p.IDQuiz);
+            HasRequired(p => p.Quiz).WithMany(p => p.Questions).HasForeignKey(p => p.IDQuiz).WillCascadeOnDelete(true);
 
         }
 

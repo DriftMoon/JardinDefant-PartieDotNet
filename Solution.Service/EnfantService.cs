@@ -20,13 +20,13 @@ namespace Solution.Service
 
         //Recherche
         //State
-        public IEnumerable<Enfant> SearchEnfantByParent(string ParentId)
+        public IEnumerable<Enfant> SearchEnfantByParent(int ParentId)
         {
             IEnumerable<Enfant> Enfantlist = GetMany();
-            if (!String.IsNullOrEmpty(ParentId))
-            {
+          //  if (!String.IsNullOrEmpty(ParentId))
+            
                 Enfantlist = GetMany(x => x.ParentId.Equals(ParentId));
-            }
+            
            return Enfantlist;
         }
 

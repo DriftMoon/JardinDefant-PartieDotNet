@@ -10,6 +10,7 @@ namespace Solution.Service
 {
     public interface ICommentService : IService<Comment>
     {
+        int LikeNumber(int idpub);
 
     }
 }

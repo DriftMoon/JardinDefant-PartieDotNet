@@ -20,8 +20,8 @@ namespace Solution.Web2
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            StarDocs = new StarDocs(new ConnectionInfo(new Uri("https://api.gnostice.com/stardocs/v1"), "8b4b3b1a978c4ed7826665d984c61087"
-                , "2b83347eb211400fb4688962c837f505"));
+            StarDocs = new StarDocs(new ConnectionInfo(new Uri("https://api.gnostice.com/stardocs/v1"), "01499657d42b46e380e5e1273fcef212"
+                , "f1986a6f9f734f188ef018f956c00d36"));
             StarDocs.Auth.loginApp();
         }
     }

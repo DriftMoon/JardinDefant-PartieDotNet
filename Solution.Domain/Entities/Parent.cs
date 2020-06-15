@@ -8,8 +8,7 @@ namespace Solution.Domain.Entities
 {
     public class Parent:User
     {
-        public int ParentId { get; set; }
-        public ICollection<Enfant> Enfants { get; set; }
+        public virtual ICollection<Enfant> Enfants { get; set; }
 
 
     }
