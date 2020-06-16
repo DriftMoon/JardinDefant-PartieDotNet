@@ -203,6 +203,8 @@
     <Compile Include="Controllers\FormationWebApiController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PublicationController.cs" />
+    <Compile Include="Controllers\PubWebApiController.cs" />
     <Compile Include="Controllers\QuestionWebApiController.cs" />
     <Compile Include="Controllers\QuizWebApiController.cs" />
     <Compile Include="Global.asax.cs">
@@ -210,12 +212,16 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ActiviteVM.cs" />
+    <Compile Include="Models\CommentVM.cs" />
     <Compile Include="Models\EnfantVM.cs" />
     <Compile Include="Models\FormationVM.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\LikeVM.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PublicationVM.cs" />
     <Compile Include="Models\QuestionVM.cs" />
     <Compile Include="Models\QuizVM.cs" />
+    <Compile Include="Models\ReplyVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -4548,6 +4554,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Uploads\" />
+    <Folder Include="Views\Publication\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

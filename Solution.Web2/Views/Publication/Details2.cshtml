@@ -1,0 +1,152 @@
+﻿@model Solution.Web2.Models.PublicationVM
+@{string path = "~/Content/Uploads/" + @Model.image;}
+
+
+<h2>Details2</h2>
+
+<hr style="border:none" />
+<h2>DetailsPublication 2</h2>
+<main class="main-content">
+
+    <!-- Blog -->
+
+    <div class="container">
+        <div class="row">
+            <!-- Blog Content -->
+            <div class="col-lg-9 col-md-9 col-sm-7 col-xs-12">
+
+                <!-- Blog detail -->
+                <div class="blog-detail-holder" style="border:6px solid #999999;border-radius: 30px">
+                    <div class="author-header" style="background-color:white; ;border-radius: 30px 30px 0px 0px ;" ">
+                        <h2 style="text-align:center">@Model.title</h2>
+                        <div class="aurhor-img-name pull-left">
+                            <img src="images/aurthor-img.jpg" alt="">
+                            <strong>by <i class="red-color">George Kvasnikov</i></strong>
+                            <span>on @Model.creationDate </span>
+                        </div>
+                        <div class="share-option pull-right">
+                            <span id="share-btn1"><i class="fa fa-share-alt"></i>Share</span>
+                            <div id="show-social-icon1" class="on-hover-share">
+                                <ul class="social-icons">
+                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                    <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-detail">
+                        <figure>
+                            <img src="@Url.Content(path)" width="600px" height="800" " alt="">
+                        </figure>
+                        <article>
+                            <p>@Model.description</p>
+                        </article>
+                    </div>
+                    <div class="tags-holder">
+                        <ul class="tags-list pull-left">
+                            <li><i class="fa fa-tags"></i>Tags</li>
+                            <li>
+                                <a href="#">
+                                    @Ajax.ActionLink("get comments", "GetComments", new { idpub = Model.PublicationId }, new AjaxOptions()
+                           {
+                               HttpMethod = "Get",
+                               UpdateTargetId = "Divcomment",
+                               InsertionMode = InsertionMode.Replace
+
+
+                           })
+                                </a>
+                            </li>
+                            <li>
+                                <div style="background: #9c9c9c47 ; height: 42px; ">
+                                    <a type="button" class="btn btn-labeled btn-danger" href="javascript:void(0)" onclick="ajouterCommentaire(@Model.PublicationId)" style="float: right">Commenter</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    @Ajax.ActionLink("Post", "PostComment", new { contenu = "test4", idpub = Model.PublicationId }, new AjaxOptions()
+                                       {
+                                           HttpMethod = "Post",
+                                           UpdateTargetId = "Divcomment",
+                                           InsertionMode = InsertionMode.Replace,
+
+
+
+                                       })
+                            </a>
+                        </li>
+                        <li><a href="#">cups</a></li>
+                    </ul>
+                    <ul class="social-icons pull-right">
+                        <li>Share this post</li>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                    </ul>
+                </div>
+                <div class="next-prev-option">
+                    <a href="#" class="prev-blog pull-left">
+                        <img src="images/blog-detail/prev-img.jpg" alt="">
+                        <span><i class="fa fa-angle-left"></i>Previous Post</span>
+                        <h5>Tottenham Hotspur are growing</h5>
+                        <span class="m-0">23 December 2015</span>
+                    </a>
+                    <a href="#" class="next-blog pull-right">
+                        <img src="images/blog-detail/next-img.jpg" alt="">
+                        <span>Next Post<i class="fa fa-angle-right"></i></span>
+                        <h5>Tottenham Hotspur are growing</h5>
+                        <span class="m-0">23 December 2015</span>
+                    </a>
+                </div>
+                <div id="Divcomment">
+
+                </div>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new {  id = Model.PublicationId }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+        </div>
+
+    </div>
+</main>
+
+
+<script>
+    function ajouterCommentaire() {
+        var idpub=@Model.PublicationId;
+        var contenu = document.getElementById("comm").value;
+        if (contenu == "") {
+            alert("un commentairene peut pas etre vide ");
+        }
+        else {
+
+            $.ajax({
+                url: @Url.Action("CreateComment", "Publication"),
+                type: "POST",
+                dataType : "json",
+                contentType:"application/json",
+                data: JSON.stringify({id: idpub, con: contenu}),
+                success: function (result) {alert(result.d)
+                }
+            });
+               /* .done(function (response) {
+                debugger;
+
+                //$('#Divcomment').html(response);
+                alert(respose.d)
+
+            });*/
+        }
+
+
+    }
+
+
+
+
+
+</script>

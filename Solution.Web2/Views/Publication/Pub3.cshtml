@@ -1,0 +1,204 @@
+﻿@model Solution.Web2.Models.PublicationVM
+@{string path = "~/Content/Uploads/" + @Model.image;}
+
+
+
+@*<div class="extended_modals">
+        <div class="modal fade in" id="responsive1" tabindex="-1" role="dialog" aria-hidden="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+
+                    </div>
+                    <div class="modal-body">
+
+                        @Html.Partial("Create2", Model)
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="width:120%">
+        <div class="card blog-horizontal">
+            <div class="card-body">
+                <div class="card-img-actions mr-sm-3 mb-3 mb-sm-0">
+                    <a href="#course_preview" data-toggle="modal">
+                        <img src="@Url.Content(path)" alt="">
+                        <div class="card-img-actions-overlay card-img">
+                            <a href="@Url.Content(path)" class="btn btn-outline bg-white text-white border-white border-2 btn-icon rounded-round" data-popup="lightbox" rel="group">
+                                <i class="icon-zoomin3"></i>
+                            </a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mb-3">
+                    <h5 class="d-flex font-weight-semibold flex-nowrap my-1">
+                        <a href="#" class="text-default mr-2">@Model.title</a>
+
+                        <span class="text-success ml-auto">Share</span>
+                    </h5>
+
+                    <ul class="list-inline list-inline-dotted text-muted mb-0">
+                        <li class="list-inline-item">By <a href="#" class="text-muted">@Model.nomuser</a></li>
+
+                    </ul>
+                </div>
+
+
+
+                @Model.description
+            </div>
+            <i style="margin-left:80%" class="enddate"> @Model.creationDate</i>
+            <div class="card-footer d-sm-flex justify-content-sm-between align-items-sm-center">
+                <ul class="list-inline list-inline-dotted mb-0">
+                    <button class="btn gary-btn" style="border-radius:10px ">@Html.ActionLink("See More", "Details", new { id = Model.PublicationId })</button>
+                    @using Microsoft.AspNet.Identity;
+                    <div id="@Model.PublicationId"> @Html.Action("GetLikes", new { idpub = Model.PublicationId })</div>
+
+
+                </ul>
+
+                <div class="mt-2 mt-sm-0">
+                    <table>
+                        <tr>
+                            @if (Model.OwnerId == User.Identity.GetUserId())
+                            {
+                                <th style="text-align:center"><span style="display: inline;">@Html.ActionLink("Delete", "Delete", new { id = Model.PublicationId })<i style="color:red" class="fa fa-trash-o fa-lg"></i></span></th>
+                                <th><p>---</p></th>
+                                <th style="text-align:center"><span style="display: inline;">@Html.ActionLink("Edit", "Edit", new { id = Model.PublicationId })<i style="color:forestgreen" class="fa fa-pencil fa fa-lg"></i></span></th>
+                            }
+                            <th style="text-align:center"><span style="display: inline;">@Html.ActionLink("PostOnFacebook", "PostOnFacebook")<i style="color:forestgreen" class="fa fa-pencil fa fa-lg"></i></span></th>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="extended_modals">
+        <div class="modal fade in" id="responsive" tabindex="-1" role="dialog" aria-hidden="false">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="theme-padding-bottom" align="center">
+                            @Html.Partial("Create2", Model)
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>*@
+
+
+
+
+
+<section class="blog-post padding-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 post-item-pagination">
+                <div class="post-items">
+                    <div class="post-item">
+                        <div class="post-image">
+                            <a href="single.html"><img src="@Url.Content(path)" alt="post image" class="img-responsive"></a>
+                        </div>
+                        <div class="post-content">
+                            <h3><a href="single.html">@Model.title</a></h3>
+                            <ul class="post-meta">
+                                <li><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>@Model.creationDate</li>
+                                <li><span class="icon flaticon-people-1"></span> <a href="#">@Model.nomuser</a></li>
+
+                                <li><span class="icon flaticon-like"></span> <a href="#"></a></li>
+                                <li><span class="icon flaticon-chat"></span> <a href="#">32 Comments</a></li>
+                            </ul>
+                            <p>@Model.description</p>
+                            <div id="@Model.PublicationId"> @Html.Action("GetLikes", new { idpub = Model.PublicationId })</div>
+                            @Html.ActionLink("Read more", "Details", new { id = Model.PublicationId }, new { @class = "button-default post-button" })
+
+
+
+                        </div>
+                        <div class="mt-2 mt-sm-0">
+                            <table>
+                                <tr>
+                                    @using Microsoft.AspNet.Identity;
+                                    @if (Model.OwnerId == User.Identity.GetUserId())
+                                    {
+                                        <th style="text-align:center"><span style="display: inline;">@Html.ActionLink("Delete", "Delete", new { id = Model.PublicationId })<i style="color:red" class="fa fa-trash-o fa-lg"></i></span></th>
+                                        <th><p>---</p></th>
+                                        <th style="text-align:center"><span style="display: inline;">@Html.ActionLink("Edit", "Edit", new { id = Model.PublicationId })<i style="color:forestgreen" class="fa fa-pencil fa fa-lg"></i></span></th>
+                                    }
+                                    <th style="text-align:center"><span style="display: inline;">@Html.ActionLink("PostOnFacebook", "PostOnFacebook")<i style="color:forestgreen" class="fa fa-pencil fa fa-lg"></i></span></th>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </div><!-- post item -->
+                    
+                </div><!-- post items -->
+               
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+@section scripts{
+    <script>
+                                function addLike( idPub) {
+
+                                    $.ajax({
+                                        url: '@Url.Action("AddLike", "Publication")' + "?idpa=" + idPub,
+                                        type: "POST",
+                                        success: function (result) {
+                                            $("#" + idPub).html(result);
+                                            toastr.success("Like Added !");
+
+
+                                        }
+
+                                    })
+
+
+
+
+                                }
+
+                                function dellLike( idPub) {
+
+
+
+
+                                    $.ajax({
+                                        url: '@Url.Action("DeleteLike", "Publication")' + "?idp=" + idPub,
+                                        type: "POST",
+                                        success: function (result) {
+                                            $("#" + idPub).html(result)
+                                            toastr.warning("Like Deleted !");
+
+
+                                        }
+
+
+                                    })
+
+
+
+
+                                }
+
+
+    </script>
+}
+

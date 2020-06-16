@@ -13,7 +13,7 @@ namespace Solution.Service
     {
         static IDataBaseFactory Factory = new DataBaseFactory();//l'usine de fabrication du context
         static IUnitOfWork utk = new UnitOfWork(Factory);//unité de travail a besoin du factory pour communiquer avec la base
-        public LikeService():base(utk)
+        public LikeService() : base(utk)
         {
 
         }

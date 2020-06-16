@@ -1,0 +1,125 @@
+﻿@model Solution.Web2.Models.PublicationVM
+@{string path = "~/Content/Uploads/" + @Model.image;}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="" />
+    <!-- Document Title -->
+    <title>Soccer HTML5 Template</title>
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="~/CSSFeres/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="~/CSSFeres/css/main.css">
+    <link rel="stylesheet" href="~/CSSFeres/css/icomoon.css">
+    <link rel="stylesheet" href="~/CSSFeres/css/animate.css">
+    <link rel="stylesheet" href="~/CSSFeres/css/transition.css">
+    <link rel="stylesheet" href="~/CSSFeres/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/CSSFeres/style.css">
+    <link rel="stylesheet" href="~/CSSFeres/css/color.css">
+    <link rel="stylesheet" href="~/CSSFeres/css/responsive.css">
+    <!-- FontsOnline -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <!-- JavaScripts -->
+    <script src="~/CSSFeres/js/vendor/modernizr.js"></script>
+    <style>
+        .theme-padding-bottom {
+            background-color: #ebebe0;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <!-- Blog List View -->
+    <div class="blog-list-View theme-padding-bottom">
+
+        <div class="theme-padding-bottom">
+            <div class="row">
+
+                <!-- Post Img -->
+                <div class="col-lg-5 col-md-5 col-xs-12">
+
+                    <img src="@Url.Content(path)" width="400px" height="300" alt="">
+
+
+                </div>
+                <!-- Post Img -->
+                <!-- Post Detail -->
+                <div class="col-lg-7 col-md-5 col-xs-12">
+                    <div class="large-post-detail style-2">
+                        <div class="author-header">
+                            <div class="aurhor-img-name pull-left">
+
+                                <div><img src="@Url.Content("~/Content/Uploads/stella.jpg")" alt=""></div>
+
+                                <div><strong>by <i class="red-color">Stella</i></strong></div>
+
+                                <div><span>On @Model.creationDate </span></div>
+                                <div><h2><a href="#">@Model.title</a></h2></div>
+                                <div><p class="team-member-description">@Model.description</p></div>
+
+                            </div>
+
+                            <div class="share-option pull-right">
+                                <span id="share-btn3"><i class="fa fa-share-alt"></i>Share</span>
+                                <div id="show-social-icon3" class="on-hover-share">
+                                    <ul class="social-icons">
+                                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
+                                        <li><a class="pinterest" href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <a class="btn gary-btn" href="#"><i>+</i>read more</a>
+
+                    </div>
+                </div>
+                <!-- Post Detail -->
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr />
+    <hr />
+
+    <script src="~/CSSFeres/js/vendor/jquery.js"></script>
+    <script src="~/CSSFeres/js/vendor/bootstrap.min.js"></script>
+    <script src="~/CSSFeres/http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="~/CSSFeres/js/gmap3.min.js"></script>
+    <script src="~/CSSFeres/js/bigslide.js"></script>
+    <script src="~/CSSFeres/js/slick.js"></script>
+    <script src="~/CSSFeres/js/waterwheelCarousel.js"></script>
+    <script src="~/CSSFeres/js/contact-form.js"></script>
+    <script src="~/CSSFeres/js/countTo.js"></script>
+    <script src="~/CSSFeres/js/datepicker.js"></script>
+    <script src="~/CSSFeres/js/rating-star.js"></script>
+    <script src="~/CSSFeres/js/range-slider.js"></script>
+    <script src="~/CSSFeres/js/spinner.js"></script>
+    <script src="~/CSSFeres/js/parallax.js"></script>
+    <script src="~/CSSFeres/js/countdown.js"></script>
+    <script src="~/CSSFeres/js/appear.js"></script>
+    <script src="~/CSSFeres/js/prettyPhoto.js"></script>
+    <script src="~/CSSFeres/js/wow-min.js"></script>
+    <script src="~/CSSFeres/js/main.js"></script>
+   
+</body>
+
+</html>
+
+

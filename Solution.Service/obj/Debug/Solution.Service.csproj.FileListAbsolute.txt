@@ -112,3 +112,25 @@ G:\kindergarten\Solution.Service\obj\Debug\Solution.Service.csprojAssemblyRefere
 G:\kindergarten\Solution.Service\obj\Debug\Solution.Service.csproj.CopyComplete
 G:\kindergarten\Solution.Service\obj\Debug\Solution.Service.dll
 G:\kindergarten\Solution.Service\obj\Debug\Solution.Service.pdb
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Solution.Service.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Solution.Service.pdb
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Service.Pattern.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Solution.Data.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Solution.Domain.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\EntityFramework.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Service.Pattern.pdb
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Solution.Data.pdb
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Solution.Data.dll.config
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Solution.Domain.pdb
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Solution.Domain.dll.config
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\EntityFramework.xml
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\bin\Debug\fr\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\obj\Debug\Solution.Service.csprojAssemblyReference.cache
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\obj\Debug\Solution.Service.csproj.CopyComplete
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\obj\Debug\Solution.Service.dll
+C:\Users\Stella\Desktop\Nouveau dossier (2)\JardinDefant-PartieDotNet\Solution.Service\obj\Debug\Solution.Service.pdb

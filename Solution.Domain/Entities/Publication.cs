@@ -17,7 +17,6 @@ namespace Solution.Domain.Entities
     }
     public class Publication
     {
-
         [Key]
         public int PublicationId { get; set; }
         public string title { get; set; }
@@ -33,6 +32,10 @@ namespace Solution.Domain.Entities
         //[Required]
         [ForeignKey("OwnerId ")]
         public virtual User Owner { get; set; }
+
+
+
+
         public virtual ICollection<Comment> comments { get; set; }
         public virtual ICollection<User> Accounts { get; set; }
         public virtual ICollection<Like> Likes { get; set; }

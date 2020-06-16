@@ -10,5 +10,7 @@ namespace Solution.Service
 {
     public interface IPublicationService : IService<Publication>
     {
+        IEnumerable<Publication> SearchFormByName(string searchString);
+
     }
 }

@@ -10,5 +10,6 @@ namespace Solution.Service
 {
     public interface ILikeService : IService<Like>
     {
+        int LikeNumber(int idpub);
     }
 }

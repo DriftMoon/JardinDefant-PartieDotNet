@@ -1,0 +1,4 @@
+﻿@model Solution.Web2.Models.LikeVM
+<p style="text-align:center">( @Html.Action("nbLike", new { idpub = Model.idPub }) Person like this publication )</p>
+<button class="icon-thumbs-down2 mr-3 icon-2x" onclick="dellLike( @Model.idPub)"  style="color:red">Dislike</button>
+

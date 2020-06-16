@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Solution.Web2.Models.ReplyVM>
+
+@{
+    ViewBag.Title = "Replies";
+    
+}
+
+
+
+
+
+    
+    <ul>
+        
+
+        <li class="sub-comment">
+            @foreach (var item in Model)
+            {
+
+                <ul>
+                    <li>
+                        <img class="position-center-x" src="@Url.Content("~/Content/Uploads/stella.jpg")" style="width:60px;
+height:60px;">
+                        <div class="comment-detail">
+                            <h5><a href="#">Stella</a></h5>
+                            <span>Juin, 2020</span>
+                            <p>@item.Contenu</p>
+                           
+                        </div>
+                    </li>
+                    </ul>
+                    }
+
+            </li></ul>
+   

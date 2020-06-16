@@ -22,6 +22,5 @@ namespace Solution.Domain.Entities
         public string nomuser { get; set; }
 
         public string OwnerId { get; set; }
-
     }
 }

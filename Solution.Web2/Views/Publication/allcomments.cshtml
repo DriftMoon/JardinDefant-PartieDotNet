@@ -1,0 +1,52 @@
+﻿
+
+
+<div class="comment-holder">
+    <h2>Commentaires</h2>
+    @foreach (var item in Model)
+    {
+        <ul>
+            <li style="padding: 15px;background: #9c9c9c47;">
+                <img class="position-center-x" src="" style="width:80px;
+height:80px;">
+
+                <div class="comment-detail">
+                    <h5><a href="#">by Stella</a></h5>
+                    <span>09/06/2020 </span>
+                    <p>@item.Contenu</p>
+                </div>
+            </li>
+        </ul>
+
+        <div style="background: #9c9c9c47 ; height: 42px; ">
+            <div class="share-option pull-right">
+                <span><a href="javascript:void(0)" onclick="supprimerCommentaire(@item.CommentId,@item.PublicationId)" style="float: right"><i class="fa fa-trash-o fa-lg"></i></a></span>
+            </div>
+        </div>
+
+    }
+    <div class="form-group" style="margin: 0;">
+        <textarea id="comm" class="form-control style-d" rows="2" placeholder="Write Comments here..."></textarea>
+        <i class="fa fa-pencil-square-o"></i>
+    </div>
+
+</div>
+
+<script>
+    function supprimerCommentaire(idcom,idpub) {
+
+            $.ajax({
+                url: "{{ path('supprimerComm') }}",
+                type: 'POST',
+                data: {'idpub': 'idpub',' idcom':' idcom'},
+                beforeSend: function () {
+                }
+            }).done(function (response) {
+                debugger;
+
+                $('#commentaires').html(response);
+
+            });
+
+    }
+</script>

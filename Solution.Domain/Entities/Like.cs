@@ -10,7 +10,6 @@ namespace Solution.Domain.Entities
 {
     public class Like
     {
-
         [Key, Column(Order = 1)]
         public string idUser { get; set; }
         [ForeignKey("idUser ")]
@@ -23,3 +22,4 @@ namespace Solution.Domain.Entities
         public virtual Publication publication { get; set; }
     }
 }
+
